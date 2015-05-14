@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<title>Leaflet-Coordinates with Leaflet.awesome-markers example</title>
+		<link rel="stylesheet" href="submodules/Leaflet/dist/leaflet.css" />
+		<link rel="stylesheet" href="submodules/Leaflet.Coordinates/dist/Leaflet.Coordinates-0.1.4.css" />
+		<link rel="stylesheet" href="submodules/Font-Awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="submodules/Leaflet.awesome-markers/dist/leaflet.awesome-markers.css">
+	</head>
+	<body>
+		<script src="submodules/Leaflet/dist/leaflet.js"></script>
+		<script src="submodules/Leaflet.Coordinates/dist/Leaflet.Coordinates-0.1.4.min.js"></script>
+		<script src="submodules/Leaflet.awesome-markers/dist/leaflet.awesome-markers.min.js"></script>
+
+		<div id="map" style="height:100%;width:100%"></div>
+
+		<script type="text/javascript">
+			var map = L.map('map').setView([28, -16], 7);
+
+			L.tileLayer('http://{s}.tiles.mapbox.com/v3/examples.map-i875mjb7/{z}/{x}/{y}.png', {
+				attribution: 'https://github.com/pedroetb',
+				maxZoom: 18
+			}).addTo(map);
+
+			var awesomeIcon = L.AwesomeMarkers.icon({
+				icon: 'star',
+				markerColor: 'red',
+				prefix: 'fa',
+				spin: true
+			});
+
+			L.control.coordinates({
+				position: "bottomleft",
+				enableUserInput: true,
+				useLatLngOrder: true,
+				markerType: L.marker,
+				markerProps: {
+					icon: awesomeIcon
+				}
+			}).addTo(map);
+		</script>
+
+	</body>
+</html>
