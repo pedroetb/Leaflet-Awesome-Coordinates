@@ -15,10 +15,11 @@ If not installed yet, you need to install [node.js](https://nodejs.org/) to use 
 Of course, you need **git** to get this project and its submodules.
 
 ### Getting submodules
-The project includes a filled *.gitmodules* file, you only have to update submodules.
+The project includes a filled *.gitmodules* file, you only have to initialize and update submodules.
 ```
 # after git clone of Leaflet-Awesome-Coordinates
 cd Leaflet-Awesome-Coordinates
+git submodule init
 git submodule update
 ```
 
