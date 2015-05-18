@@ -1,8 +1,8 @@
 # Leaflet-Awesome-Coordinates
 This is a very simple [Leaflet](https://github.com/Leaflet/Leaflet) map example using my own fork of [Leaflet-Coordinates](https://github.com/pedroetb/Leaflet.Coordinates) with [Leaflet.awesome-markers](https://github.com/lvoogdt/Leaflet.awesome-markers).
 
-I made this example to show the potential use of new features added in my fork of *Leaflet-Coordinates*.
-You can test it with any other marker types and/or properties if you wish.
+I made this example to show the potential use of new features added in my fork of *Leaflet-Coordinates*, allowing users to customize the overexploited Leaflet's default marker.
+It's tested with [Leaflet.awesome-markers](https://github.com/lvoogdt/Leaflet.awesome-markers), but you can test it with any other marker types and/or properties if you wish (maybe only changing the icon image url, for instance).
 
 ## Screenshot
 ![Leaflet-Awesome-Coordinates screenshot](https://raw.github.com/pedroetb/Leaflet-Awesome-Coordinates/master/images/Leaflet-Awesome-Coordinates.png "Leaflet-Awesome-Coordinates screenshot")
